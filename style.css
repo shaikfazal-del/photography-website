@@ -1,0 +1,597 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: auto;
+}
+
+header {
+    max-height: 30vh;
+    max-width: 100vw;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#brandname a h3 {
+    color: yellow;
+    padding-left: 30px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+#brandname a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex: content;
+    flex-direction: row-reverse;
+}
+
+li {
+    display: inline;
+    padding-left: 30px;
+    color: rgb(73, 146, 112);
+    padding-right: 35px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+li:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #f0f;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: large;
+}
+
+.logoimage {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bestworkphoto {
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#heading {
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    font-size: large;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 60px;
+}
+
+.image {
+    max-width: 300px;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+
+.caption {
+    flex: 1;
+}
+
+.caption-left {
+    text-align: left;
+}
+
+.image-container:nth-child(odd) {
+    flex-direction: row;
+}
+
+.image-container:nth-child(odd) .image {
+    order: 1;
+}
+
+.image-container:nth-child(odd) .caption {
+    order: 2;
+}
+
+.image-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-container:nth-child(even) .image {
+    order: 2;
+}
+
+.image-container:nth-child(even) .caption {
+    order: 1;
+}
+
+.caption {
+    color: whitesmoke;
+    padding-left: 400px;
+}
+
+/* img {
+    border: 4px solid white;
+} */
+
+pre {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Skranji', cursive;
+
+}
+
+.instagrampage {
+    height: 60vh;
+    width: 100vw;
+    margin-top: 5px;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357);
+    padding-bottom: 15px;
+    overflow: hidden;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.instagrampage h2 {
+    text-align: center;
+    color: yellow;
+}
+
+.instapageborder {
+    height: 321px;
+    width: 829px;
+    margin-left: 360px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: 5px solid;
+    animation: bordercolor 1s linear infinite;
+    box-shadow: 4px;
+}
+
+@keyframes bordercolor {
+    0% {
+        border-color: aqua;
+    }
+
+    50% {
+        border-color: blue;
+    }
+
+    75% {
+        border-color: yellow;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+.hiringapplication {
+    height: 120vh;
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+
+}
+
+.applicationform {
+    height: 117vh;
+    width: 50vw;
+    border: 5px solid black;
+    border-radius: 20px;
+    animation: borderanimation 3s linear infinite;
+    background-color: white;
+
+
+}
+
+.text {
+    text-align: center;
+    animation: heading 1s linear infinite;
+}
+
+.form {
+    padding: 40px;
+}
+
+.button {
+    padding-left: 270px;
+}
+
+button {
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+@keyframes borderanimation {
+    0% {
+        border-color: red;
+    }
+
+    25% {
+        border-color: #b8b023;
+    }
+
+    50% {
+        border-color: rgb(116, 46, 153);
+    }
+
+    75% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: #57c3cf;
+
+    }
+
+}
+
+@keyframes heading {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+button:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid palevioletred;
+}
+
+label {
+    color: #cc3948;
+}
+
+.something {
+    height: 100vh;
+    width: 100vw;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357);
+    padding-bottom: 15px;
+    overflow: hidden;
+    /* /* W3C, IE 10+/ Edge, Fi */
+}
+.pricingplans {
+    height: 40vh;
+    width: 100vw;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357); 
+    display: flex;
+    justify-content: space-around;
+}
+.weddingplans {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    background: #633955;
+    background: linear-gradient(135deg, #633955, #4B7B8A);
+}
+
+.studioplans {
+    border: 3px solid blueviolet;
+    border-radius:20px;
+    background: #633955;
+    background: linear-gradient(135deg, #633955, #4B7B8A);
+}
+
+.outdoorplans {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    background: #633955;
+    background: linear-gradient(135deg, #633955, #4B7B8A);
+}
+
+
+.placing {
+    padding: 25px;
+}
+#center {
+    text-align: center;
+}
+#buynowbtn {
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#buynowbtn:hover {
+    color:blue;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+}
+.ourprojects {
+    height: 130vh;
+    width: 100vw;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357); 
+    padding: 50px;
+}
+.imagesholder {
+    display: flex;
+    flex-wrap:nowrap;
+    padding: 20px;
+}
+
+#aboutsection h1 { 
+    color: #fff307;
+}
+li img{
+    height: 244px;
+    width: 278px;
+    margin: 25px;
+    border: 3px solid rgb(107 114 128);
+    border-radius: 25px;
+}
+.clientsays {
+    height: 100vh;
+    width:100vw;
+    background: #114357;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F29492, #114357);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F29492, #114357);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #fff307;
+    padding: 30px;
+
+}
+.client1 {
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 120px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_11{
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+
+}
+.client2{
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 125px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_22 {
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+}
+.client3{
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 125px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_33 {
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+}
+.client4{
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 125px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_44 {
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+}
+.client5{
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 125px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_55 {
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+}
+.client6{
+    margin: 30px;
+    border: 2px solid rgb(219, 215, 221);
+    height: 125px;
+    width: 348px;
+    padding: 20px;
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 40px;
+}
+#image_66 {
+    height: 90px;
+    width:85px ;
+    border-radius: 130px;
+    padding: 24px;
+}
+.newssettler {
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.newssettler h2 {
+    padding: 0px 40px;
+    color: white;
+}
+#email {
+    padding: 10px 200px;
+    margin: 0px 20px;
+    border-radius: 25px;
+}
+#subscribe {
+    margin: 0px 10px;
+    padding: 5px 20px;
+}
+#subscribe:hover {
+    text-transform: uppercase;
+    background-color:rgb(64, 197, 64);
+    color:red
+}
+footer {
+    height: 58vh;
+    width: 100vw;
+    background-color: #A9A9A9;
+    position: static;
+    bottom: 0%;
+}
+.containerforflex {
+    display: flex;
+    flex-direction:row;
+    gap: 500px;
+}
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+.gap ul li a .pad {
+    padding: 50px;
+}
+a {
+    transition: transform 0.5s;
+}
+
+.fa-instagram {
+    margin: 20px;
+}
+.fa-facebook {
+    margin: 20px;
+}
+.fa-youtube {
+    margin: 20px;
+}
+.fa-twitter {
+    margin: 20px;
+}
+.fa-github {
+    margin: 20px;
+}
+.fa-linkedin {
+    margin: 20px;
+}
+a i{
+    color: #777;
+    transform: translateY(2px);
+}
+a:hover .fa-instagram {
+    color:#f14843;
+}
+a:hover .fa-youtube {
+    color:#f00;
+}
+a:hover .fa-github {
+    color:#171515;
+}
+a:hover .fa-twitter {
+    color:#00acee;
+}
+a:hover .fa-linkedin {
+    color:#0A66c2;
+}
+a:hover .fa-facebook {
+    color:#3b5998;
+}
+a:hover .fa-facebook {
+    color:#3b5998;
+}
+.copyright {
+    display: inline;
+    text-align: center;
+}
+.designedby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
